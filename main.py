@@ -5,6 +5,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import login_user,logout_user,login_manager,LoginManager
 from flask_login import login_required,current_user
 import json
+import os
 
 # MY db connection
 local_server= True
@@ -272,4 +273,5 @@ def test():
         return 'My db is not Connected'
 
 
-app.run(debug=True)    
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port, debug=False)    
