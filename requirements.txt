@@ -2,7 +2,7 @@ Flask==2.2.5
 Jinja2>=3.0
 itsdangerous==2.0.1
 Flask-Mail==0.9.1
-Flask-SQLAlchemy==2.4.3
+Flask-SQLAlchemy==2.5.1
 future==0.18.2
 jmespath==0.9.5
 Js2Py==0.70
